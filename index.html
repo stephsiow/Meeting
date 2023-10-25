@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Meeting Cost Calculator</h1>
+
+        <div class="instructions">
+            <p><strong>Option 1:</strong> Use the timer for the duration of the meeting. Select the number of each type of staff attending the meeting. Click 'Calculate Cost' when the meeting is done.</p>
+        </div>
+
+        <div id="timer">00:00:00</div>
+        <button id="start">Start</button>
+        <button id="stop" disabled>Stop</button>
+        <button id="resume" disabled>Resume</button>
+
+        <div class="instructions">
+            <p><strong>Option 2:</strong> Key in the number of hours and minutes of your meeting. Select the number of each type of staff attending the meeting. Click 'Calculate Cost.'</p>
+        </div>
+
+        <div class="time-input">
+            <label for="hours">Hours: </label>
+            <input type="number" id="hours" value="0">
+        </div>
+
+        <div class="time-input">
+            <label for="minutes">Minutes: </label>
+            <input type="number" id="minutes" value="0">
+        </div>
+
+        <div class="instructions">
+            <p><strong>Now, how many people attended the meeting?</strong></p>
+        </div>
+
+        <div class="cost-input">
+            <label for="senior">Senior Leadership: </label>
+            <input type="number" id="senior" value="0">
+        </div>
+
+        <div class="cost-input">
+            <label for="deputy">Deputy Senior Leadership: </label>
+            <input type="number" id="deputy" value="0">
+        </div>
+
+        <div class="cost-input">
+            <label for="directors">Directors: </label>
+            <input type="number" id="directors" value="0">
+        </div>
+
+        <div class="cost-input">
+            <label for="deputyDirectors">Deputy Directors: </label>
+            <input type="number" id="deputyDirectors" value="0">
+        </div>
+
+        <div class="cost-input">
+            <label for="staff">Staff: </label>
+            <input type="number" id="staff" value="0">
+        </div>
+       
+        <button id="calculate">Calculate Approximate Cost</button>
+        <div id="meetingCost"></div>
+        <button id="reset" style="display: none;">Reset Calculator</button>
+        
+        <p>Disclaimer: Wage costs were very roughly estimated based on publicly-available data.</p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
